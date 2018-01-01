@@ -6,6 +6,10 @@ dependencies:
   override:
     - npm install -g eslint
 
+test:
+  override:
+    - eslint ./
+
 deployment:
   qa:
     branch: ejercicios
