@@ -18,7 +18,7 @@ function platzom(str) {
 		const secondHalf = translation.slice(Math.round(length / 2));
 		translation = `${firstHalf}-${secondHalf}`;
 	}
-    
+
 	// Si la palabra original es un palindromo, ninguna palabra anterior cuenta y se devuelve la misma palabra
 	// Intercambiando mayusculas y minusculas
 
