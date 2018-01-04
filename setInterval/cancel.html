@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reto</title>
+</head>
+<body>
+    <h1 id="timer">Han pasado 0 segundos</h1>
+    <button id="cancel-button">Cancelar</button>
+    <script>
+        let counter = 0;
+        const $cancelButton = document.getElementById('cancel-button')
+        const interval = setInterval(() => {
+            const timer = document.getElementById('timer');
+            counter++
+            counter == 1 ? timer.textContent = `Ha pasado ${counter} segundo` : timer.textContent = `Han pasado ${counter} segundos`
+        }, 1000)
+
+        $cancelButton.addEventListener('click', () => {
+            clearInterval(interval)
+        })        
+    </script>
+</body>
+</html>
