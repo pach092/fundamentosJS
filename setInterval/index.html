@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>setInterval</title>
+</head>
+<body>
+    <h1 id="timer">Han pasado 0 segundos</h1>
+    <script>
+        const timer = document.getElementById('timer');
+        let counter = 0
+        // setInterval(que voy a hacer?, durante cuanto timepo?)    
+        setInterval(() => {
+            counter++;
+            timer.textContent = `Han pasado ${counter} segundos`;
+        }, 1000)
+    </script>
+</body>
+</html>
