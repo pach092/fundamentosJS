@@ -1,5 +1,7 @@
 setTimeout(function callback() {
-    console.log('Ya pasaron 3 segundos')
-}, 0)
+	console.log('A');
+}, 1000);
 
-console.log('Hola')
+for (let i = 0; i < 99999999999; i++);
+
+console.log('B');
