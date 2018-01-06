@@ -4,7 +4,7 @@ machine:
   
 dependencies:
   override:
-    - cd platzom; npm install --save-dev mocha chai
+    - cd platzom; npm install
 
 test:
   override:
