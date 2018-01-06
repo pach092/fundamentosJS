@@ -4,12 +4,11 @@ machine:
   
 dependencies:
   override:
-    - npm install -g eslint
+    - cd platzom; npm install --save-dev mocha chai
 
 test:
   override:
-    - cd platzom/
-    - npm test
+    - cd platzom; npm test
 
 deployment:
   qa:
