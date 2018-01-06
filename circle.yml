@@ -8,13 +8,14 @@ dependencies:
 
 test:
   override:
-    - eslint ./
+    - cd platzom/
+    - npm test
 
 deployment:
   qa:
     branch: ejercicios
     commands:
-      - eslint ./
+      - 
   prod:
     branch: master
     commands:
